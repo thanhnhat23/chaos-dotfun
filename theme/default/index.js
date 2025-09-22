@@ -17,7 +17,10 @@ reldens.setupCustomClientPlugin('customPluginKey', ClientPlugin);
 
 // client event listener example with version display:
 reldens.events.on('reldens.afterInitEngineAndStartGame', () => {
-    reldens.gameDom.getElement('#current-version').innerHTML = reldens.config.client.gameEngine.version + ' -';
+    const verEl = reldens.gameDom.getElement('#current-version');
+    if (verEl) {
+        verEl.innerHTML = reldens.config.client.gameEngine.version + ' -';
+    }
 });
 
 // demo message removal:

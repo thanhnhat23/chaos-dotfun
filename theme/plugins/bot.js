@@ -7,10 +7,10 @@
  */
 
 const { cli } = require('@colyseus/loadtest');
-const { ConfigManager } = require('reldens/lib/config/client/config-manager');
-const { ChatConst } = require('reldens/lib/chat/constants');
-const { GameClient } = require('reldens/lib/game/client/game-client');
-const { GameConst } = require('reldens/lib/game/constants');
+const { ConfigManager } = require('../../lib/config/client/config-manager');
+const { ChatConst } = require('../../lib/chat/constants');
+const { GameClient } = require('../../lib/game/client/game-client');
+const { GameConst } = require('../../lib/game/constants');
 const { sc } = require('@reldens/utils');
 let botsCounter = 1;
 let startTimer = new Date().getTime();

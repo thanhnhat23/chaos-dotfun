@@ -7,7 +7,7 @@
 const { Healer } = require('./objects/server/healer');
 const { QuestNpc } = require('./objects/server/quest-npc');
 const { WeaponsMaster } = require('./objects/server/weapons-master');
-const { PluginInterface } = require('reldens/lib/features/plugin-interface');
+const { PluginInterface } = require('../../lib/features/plugin-interface');
 
 class ServerPlugin extends PluginInterface
 {

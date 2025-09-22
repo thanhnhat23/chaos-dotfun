@@ -6,7 +6,7 @@
  *
  */
 
-const { AnimationEngine } = require('reldens/lib/objects/client/animation-engine');
+const { AnimationEngine } = require('../../../../lib/objects/client/animation-engine');
 
 class Npc1 extends AnimationEngine
 {
