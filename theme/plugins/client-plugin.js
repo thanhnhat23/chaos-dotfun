@@ -4,7 +4,7 @@
  *
  */
 
-const { PluginInterface } = require('reldens/lib/features/plugin-interface');
+const { PluginInterface } = require('../../lib/features/plugin-interface');
 const { Npc1 } = require('./objects/client/npc1');
 
 class ClientPlugin extends PluginInterface
