@@ -257,6 +257,7 @@
     }
 
 }
+
 .ui-dialog-box.type-trader {
     min-height: 200px;
 
@@ -281,7 +282,8 @@
 
         &.trade-items-boxes {
 
-            .trade-col, .trade-player-col {
+            .trade-col,
+            .trade-player-col {
                 min-height: 138px;
             }
 
@@ -354,7 +356,8 @@
         cursor: pointer;
     }
 
-    input, button {
+    input,
+    button {
         border: 0;
         margin: 6px auto 2px;
         width: 100%;
@@ -366,7 +369,38 @@
         padding: 4px 0;
     }
 
-    .requirement-key img, .reward-key img {
+    /* Ensure quantity input is visible and readable */
+    .trade-qty-input {
+        background: rgba(15, 23, 42, 0.85);
+        color: #fff;
+        border: 1px solid rgba(148, 163, 184, 0.7);
+        border-radius: 6px;
+        padding: 6px 10px;
+        appearance: textfield;
+        -moz-appearance: textfield;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .trade-qty-input::placeholder {
+        color: rgba(203, 213, 225, 0.6);
+    }
+
+    .trade-qty-input:focus {
+        border-color: #38bdf8;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
+    }
+
+    .trade-qty-input::-webkit-outer-spin-button,
+    .trade-qty-input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .requirement-key img,
+    .reward-key img {
         max-width: 16px;
     }
 

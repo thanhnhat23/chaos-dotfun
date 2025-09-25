@@ -1,1 +1,9 @@
-<input type="number" value="{{quantityDisplay}}"{{&quantityMaxDisplay}} min="1"/>
+<input
+    type="number"
+    class="trade-qty-input"
+    value="{{quantityDisplay}}"{{&quantityMaxDisplay}}
+    min="1"
+    inputmode="numeric"
+    aria-label="Quantity"
+    placeholder="1"
+/>

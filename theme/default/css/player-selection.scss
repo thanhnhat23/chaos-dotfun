@@ -13,6 +13,8 @@
 
     #player-selection {
         display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
         &.hidden {
             display: none;
@@ -22,49 +24,54 @@
 
 #player-selection {
     display: none;
-    max-width: 500px;
-    margin: 40px auto;
+    width: 100%;
+    margin: 0 auto clamp(2rem, 4vw, 3rem);
+    padding: 0 clamp(1.25rem, 3vw, 2rem) clamp(2rem, 5vw, 3rem);
 
     .selection-forms-container {
         margin: 0 auto;
-        display: block;
-        width: 88%;
-        background: rgba(255, 255, 255, 0.6);
-        float: left;
-        padding: 6%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(2rem, 4vw, 3rem);
 
         form {
-            float: left;
             width: 100%;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
 
             &.hidden {
                 display: none;
             }
 
             .select-element {
-                display: block;
-                position: relative;
-                float: none;
-                margin: 0 auto;
-                border: 1px solid $cLightGrey;
-                padding: 8px;
-                text-align: center;
+                border: 1px solid rgba(148, 163, 184, 0.28);
+                border-radius: 16px;
+                background: rgba(15, 23, 42, 0.7);
+                padding: 0.75rem 1rem;
+                color: #f8fafc;
+                text-align: left;
+                transition: border-color 0.2s ease, box-shadow 0.2s ease;
+                width: 100%;
+                appearance: none;
+            }
+
+            .select-element:focus {
+                outline: none;
+                border-color: rgba(125, 211, 252, 0.75);
+                box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
             }
 
             .scene-select {
-                width: 54%;
-                max-width: 268px;
-                float: right;
-                padding: 8px 1%;
-                margin: 0;
-                text-align: left;
+                width: 100%;
+                max-width: none;
             }
 
             .player-creation-additional-info {
-                display: block;
-                float: left;
                 width: 100%;
+                font-size: 0.9rem;
+                color: rgba(226, 232, 240, 0.7);
             }
 
             .class-path-select-avatar {
@@ -74,7 +81,8 @@
             }
 
             .submit-container {
-                justify-content: end;
+                justify-content: flex-end;
+                gap: 1rem;
 
                 .loading-container {
                     width: auto;
