@@ -1,10 +1,10 @@
 {
-    "name": "Reldens",
-    "short_name": "Reldens",
+    "name": "Chaos",
+    "short_name": "Chaos",
     "start_url": "/",
     "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#0f172a",
+    "background_color": "#0f172a",
     "icons": [
         {
             "src": "assets/favicons/android-icon-144x144.png",
